@@ -51,13 +51,15 @@ class Camera(SmartCamModule):
         self, password: str, public_key_b64: str | None = None
     ) -> str:
         """Encrypt a plaintext password using camera RSA key."""
-        key_b64 = (
+        key_str = (
             public_key_b64
             or getattr(self._device, "_public_key", None)
             or _STATIC_PUBLIC_KEY_B64
         )
-        key_bytes = base64.b64decode(key_b64)
-        public_key = serialization.load_der_public_key(key_bytes)
+        if "-----BEGIN" in key_str:
+            public_key = serialization.load_pem_public_key(key_str.encode())
+        else:
+            public_key = serialization.load_der_public_key(base64.b64decode(key_str))
         if not isinstance(public_key, RSAPublicKey):
             raise TypeError("Loaded public key is not an RSA public key")
         encrypted = public_key.encrypt(password.encode(), padding.PKCS1v15())
