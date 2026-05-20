@@ -52,7 +52,40 @@ class SmartCamModule(SmartModule):
         "VehicleDetection"
     )
 
+    SmartCamFirmware: Final[ModuleName[modules.Firmware]] = ModuleName("Firmware")
+
     SmartCamBattery: Final[ModuleName[modules.Battery]] = ModuleName("Battery")
+
+    SmartCamNightVision: Final[ModuleName[modules.NightVision]] = ModuleName(
+        "NightVision"
+    )
+    SmartCamDayNightMode: Final[ModuleName[modules.DayNightMode]] = ModuleName(
+        "DayNightMode"
+    )
+    SmartCamOSD: Final[ModuleName[modules.OSD]] = ModuleName("OSD")
+    SmartCamAudioConfig: Final[ModuleName[modules.AudioConfig]] = ModuleName(
+        "AudioConfig"
+    )
+    SmartCamVideoQuality: Final[ModuleName[modules.VideoQuality]] = ModuleName(
+        "VideoQuality"
+    )
+    SmartCamSDCard: Final[ModuleName[modules.SDCard]] = ModuleName("SDCard")
+    SmartCamSpotlight: Final[ModuleName[modules.Spotlight]] = ModuleName("Spotlight")
+    SmartCamNightBoost: Final[ModuleName[modules.NightBoost]] = ModuleName("NightBoost")
+    SmartCamImageFlip: Final[ModuleName[modules.ImageFlip]] = ModuleName("ImageFlip")
+    SmartCamLightFrequency: Final[ModuleName[modules.LightFrequency]] = ModuleName(
+        "LightFrequency"
+    )
+    SmartCamCameraAlarm: Final[ModuleName[modules.CameraAlarm]] = ModuleName(
+        "CameraAlarm"
+    )
+    SmartCamNotifications: Final[ModuleName[modules.Notifications]] = ModuleName(
+        "Notifications"
+    )
+    SmartCamRecordingConfig: Final[ModuleName[modules.RecordingConfig]] = ModuleName(
+        "RecordingConfig"
+    )
+    SmartCamRecordings: Final[ModuleName[modules.Recordings]] = ModuleName("Recordings")
 
     SmartCamDeviceModule: Final[ModuleName[modules.DeviceModule]] = ModuleName(
         "devicemodule"

@@ -17,7 +17,7 @@ class Led(SmartCamModule, LedInterface):
 
     @property
     def led(self) -> bool:
-        """Return current led status."""
+        """Return current status LED state."""
         return self.data["config"]["enabled"] == "on"
 
     @allow_update_after

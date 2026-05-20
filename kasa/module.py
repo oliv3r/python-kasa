@@ -171,6 +171,27 @@ class Module(ABC):
     Camera: Final[ModuleName[smartcam.Camera]] = ModuleName("Camera")
     LensMask: Final[ModuleName[smartcam.LensMask]] = ModuleName("LensMask")
     PanTilt: Final[ModuleName[smartcam.PanTilt]] = ModuleName("PanTilt")
+    NightVision: Final[ModuleName[smartcam.NightVision]] = ModuleName("NightVision")
+    DayNightMode: Final[ModuleName[smartcam.DayNightMode]] = ModuleName("DayNightMode")
+    OSD: Final[ModuleName[smartcam.OSD]] = ModuleName("OSD")
+    AudioConfig: Final[ModuleName[smartcam.AudioConfig]] = ModuleName("AudioConfig")
+    VideoQuality: Final[ModuleName[smartcam.VideoQuality]] = ModuleName("VideoQuality")
+    SDCard: Final[ModuleName[smartcam.SDCard]] = ModuleName("SDCard")
+    Spotlight: Final[ModuleName[smartcam.Spotlight]] = ModuleName("Spotlight")
+    NightBoost: Final[ModuleName[smartcam.NightBoost]] = ModuleName("NightBoost")
+    ImageFlip: Final[ModuleName[smartcam.ImageFlip]] = ModuleName("ImageFlip")
+    LightFrequency: Final[ModuleName[smartcam.LightFrequency]] = ModuleName(
+        "LightFrequency"
+    )
+    CameraAlarm: Final[ModuleName[smartcam.CameraAlarm]] = ModuleName("CameraAlarm")
+    Notifications: Final[ModuleName[smartcam.Notifications]] = ModuleName(
+        "Notifications"
+    )
+    Firmware: Final[ModuleName[smartcam.Firmware]] = ModuleName("Firmware")
+    RecordingConfig: Final[ModuleName[smartcam.RecordingConfig]] = ModuleName(
+        "RecordingConfig"
+    )
+    Recordings: Final[ModuleName[smartcam.Recordings]] = ModuleName("Recordings")
 
     # Vacuum modules
     Clean: Final[ModuleName[smart.Clean]] = ModuleName("Clean")

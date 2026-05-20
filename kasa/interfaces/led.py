@@ -18,7 +18,7 @@ class Led(Module, ABC):
             Feature(
                 device=device,
                 container=self,
-                name="LED",
+                name="Status LED",
                 id="led",
                 icon="mdi:led",
                 attribute_getter="led",
